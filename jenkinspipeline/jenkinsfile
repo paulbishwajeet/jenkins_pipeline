@@ -9,7 +9,7 @@ pipeline {
 			steps {
 				script {
 					def calculator = new Calculator()
-					println canculator.add(1,2)
+					println calculator.add(1,2)
 					
 					}
 				}
