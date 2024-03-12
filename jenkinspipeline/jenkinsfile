@@ -1,17 +1,19 @@
+@Library("pipeline-shared-lib")
+import com.acceleratedskillup.*;
+
 pipeline {
 
 	agent none
 	stages {
 		stage('Build') {
-			when {
-				changeRequest()
-			}
 			steps {
-				echo "Hello World"
+				script {
+					def calculator = new Calculator()
+					println canculator.add(1,2)
+					
+					}
 				}
 			}
 			}
 
 		}
-	}
-}
